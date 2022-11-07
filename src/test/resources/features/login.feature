@@ -9,7 +9,7 @@ Feature: Library app login feature
   Background: For the scenarios in the feature file, user is expected to be on login page
     Given user is on the library login page
 
-  @smoke @librarian @employee
+   @librarian @employee
   Scenario: Login as a librarian
     #Given user is on the library login page
     When user enters librarian username
@@ -23,7 +23,7 @@ Feature: Library app login feature
     And user enters student password
     Then user should see dashboard
 
-  @admin @employee @smoke
+  @admin @employee
   Scenario: Login as a admin
     #Given user is on the library login page
     When user enters admin username
